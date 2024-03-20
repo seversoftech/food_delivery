@@ -39,6 +39,16 @@ class LoginPage extends StatelessWidget {
             ClickButton(
               text: 'Sign In',
               onTap: () {},
+            ),
+            SizedBox(height: 10),
+            Row(
+              children: [
+                Text("Not a User?"),
+                SizedBox(
+                  width: 4,
+                ),
+                Text("Register Here"),
+              ],
             )
           ],
         ),

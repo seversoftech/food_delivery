@@ -11,10 +11,19 @@ class ClickButton extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-          decoration:
-              BoxDecoration(color: Theme.of(context).colorScheme.secondary),
+          padding: EdgeInsets.all(25),
+          margin: EdgeInsets.symmetric(horizontal: 25),
+          decoration: BoxDecoration(
+              color: Theme.of(context).colorScheme.secondary,
+              borderRadius: BorderRadius.circular(8.0)),
           child: Center(
-            child: Text(text),
+            child: Text(
+              text,
+              style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                  color: Theme.of(context).colorScheme.inversePrimary),
+            ),
           )),
     );
   }
