@@ -23,6 +23,6 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'Food Delivery',
         theme: Provider.of<ThemeProvider>(context).themeData,
-        home: LoginPage());
+        home: LoginPage(onTap: () {  },));
   }
 }
