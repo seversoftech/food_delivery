@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_delivery/components/my_button.dart';
 import 'package:food_delivery/components/textfield.dart';
 
 class LoginPage extends StatelessWidget {
@@ -34,6 +35,11 @@ class LoginPage extends StatelessWidget {
                 controller: passController,
                 hintText: "Password",
                 obscureText: true),
+            SizedBox(height: 10),
+            ClickButton(
+              text: 'Sign In',
+              onTap: () {},
+            )
           ],
         ),
       ),
