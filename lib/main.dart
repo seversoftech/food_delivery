@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Food Delivery',
-        theme: ThemeData(),
+        theme: Provider.of<ThemeProvider>(context).themeData,
         home: LoginPage());
   }
 }
