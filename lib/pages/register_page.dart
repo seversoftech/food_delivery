@@ -52,7 +52,7 @@ class _RegisterPageState extends State<RegisterPage> {
                 obscureText: true),
             SizedBox(height: 10),
             ClickButton(
-              text: 'Sign In',
+              text: 'Reister',
               onTap: () {},
             ),
             SizedBox(height: 25),
@@ -60,7 +60,7 @@ class _RegisterPageState extends State<RegisterPage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  "Not a user?",
+                  "Already a user?",
                   style: TextStyle(
                       color: Theme.of(context).colorScheme.inversePrimary),
                 ),
@@ -70,7 +70,7 @@ class _RegisterPageState extends State<RegisterPage> {
                 GestureDetector(
                   onTap: widget.onTap,
                   child: Text(
-                    "Register here",
+                    "Login here",
                     style: TextStyle(
                         color: Theme.of(context).colorScheme.inversePrimary,
                         fontWeight: FontWeight.bold),

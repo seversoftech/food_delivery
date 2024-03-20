@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_delivery/auth/login_or_register.dart';
 import 'package:food_delivery/themes/theme_provider.dart';
 import 'package:provider/provider.dart';
 
@@ -23,8 +24,6 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'Food Delivery',
         theme: Provider.of<ThemeProvider>(context).themeData,
-        home: LoginPage(
-          onTap: () {},
-        ));
+        home: LoginOrRegister());
   }
 }
