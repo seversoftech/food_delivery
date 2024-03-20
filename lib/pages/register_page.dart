@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:food_delivery/components/my_button.dart';
+import 'package:food_delivery/components/button.dart';
 import 'package:food_delivery/components/textfield.dart';
 
 class RegisterPage extends StatefulWidget {
