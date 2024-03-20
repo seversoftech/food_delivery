@@ -7,9 +7,18 @@ class MyDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Drawer(
       backgroundColor: Theme.of(context).colorScheme.background,
-      child: Column(children: [
-        Icon(Icons.lock_open_rounded,size: 40,)
-      ]),
+      child: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(top: 100.0),
+            child: Icon(
+              Icons.lock_open_rounded,
+              size: 80,
+              color: Theme.of(context).colorScheme.inversePrimary,
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
