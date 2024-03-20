@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:food_delivery/components/textfield.dart';
 
 class LoginPage extends StatelessWidget {
-  const LoginPage({super.key});
+  final TextEditingController emailController = TextEditingController();
+  final TextEditingController passController = TextEditingController();
+
+  LoginPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +25,10 @@ class LoginPage extends StatelessWidget {
                   color: Theme.of(context).colorScheme.inversePrimary),
             ),
             SizedBox(height: 25),
-            TextField()
+            MyTextField(
+                controller: emailController,
+                hintText: "Email",
+                obscureText: false)
           ],
         ),
       ),
