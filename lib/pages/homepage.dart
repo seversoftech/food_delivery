@@ -22,7 +22,7 @@ class _HomepageState extends State<Homepage> {
           ),
           headerSliverBuilder: (context, innerBoxIsScrolled) => [
             CustomAppBar(
-              title: Text('APPBAR TITLE'),
+              title: Text('TITLE'),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
