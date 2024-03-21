@@ -4,6 +4,7 @@ import 'package:food_delivery/components/description_box.dart';
 import 'package:food_delivery/components/drawer.dart';
 
 import '../components/silver_app_bar.dart';
+import '../components/tab_bar.dart';
 
 class Homepage extends StatefulWidget {
   const Homepage({super.key});
@@ -12,8 +13,24 @@ class Homepage extends StatefulWidget {
   State<Homepage> createState() => _HomepageState();
 }
 
-class _HomepageState extends State<Homepage> {
+class _HomepageState extends State<Homepage>
+    with SingleTickerProviderStateMixin {
+  late TabController _tabcontroller;
+
   @override
+  void initState() {
+    setState(() {
+      _tabcontroller = TabController(length: 2, vsync: this);
+    });
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    _tabcontroller.dispose();
+    super.dispose();
+  }
+
   Widget build(BuildContext context) {
     return Scaffold(
         drawer: MyDrawer(),
@@ -23,7 +40,9 @@ class _HomepageState extends State<Homepage> {
           ),
           headerSliverBuilder: (context, innerBoxIsScrolled) => [
             CustomAppBar(
-              title: Text('TITLE'),
+              title: TabbBar(
+                tabController: _tabcontroller,
+              ),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
