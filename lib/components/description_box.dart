@@ -13,10 +13,11 @@ class DescriptionBox extends StatelessWidget {
 
     return Container(
       decoration: BoxDecoration(
-        border: Border.all(
-          color: Theme.of(context).colorScheme.secondary,
-        ),
-      ),
+          border: Border.all(
+            color: Theme.of(context).colorScheme.secondary,
+          ),
+          borderRadius: BorderRadius.circular(8)),
+      margin: EdgeInsets.only(left: 25, right: 25, bottom: 25),
       padding: EdgeInsets.all(25),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
