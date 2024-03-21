@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery/components/current_location.dart';
+import 'package:food_delivery/components/description_box.dart';
 import 'package:food_delivery/components/drawer.dart';
 
 import '../components/silver_app_bar.dart';
@@ -32,6 +33,7 @@ class _HomepageState extends State<Homepage> {
                     color: Theme.of(context).colorScheme.secondary,
                   ),
                   CurrentLocation(),
+                  DescriptionBox()
                 ],
               ),
             )

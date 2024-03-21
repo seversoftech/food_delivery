@@ -5,21 +5,31 @@ class DescriptionBox extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var primaryTextStyle =
+        TextStyle(color: Theme.of(context).colorScheme.inversePrimary);
+
+    var secondaryTextStyle =
+        TextStyle(color: Theme.of(context).colorScheme.primary);
+
     return Container(
       decoration: BoxDecoration(
         border: Border.all(
           color: Theme.of(context).colorScheme.secondary,
         ),
       ),
+      padding: EdgeInsets.all(25),
       child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Column(
             children: [
               Text(
                 '\$0.99',
+                style: primaryTextStyle,
               ),
               Text(
                 'Delivery Fee',
+                style: secondaryTextStyle,
               ),
             ],
           ),
@@ -27,9 +37,11 @@ class DescriptionBox extends StatelessWidget {
             children: [
               Text(
                 '15-30 min',
+                style: primaryTextStyle,
               ),
               Text(
                 'Delivery Time',
+                style: secondaryTextStyle,
               ),
             ],
           ),
