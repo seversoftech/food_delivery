@@ -20,7 +20,7 @@ class _HomepageState extends State<Homepage>
   @override
   void initState() {
     setState(() {
-      _tabcontroller = TabController(length: 2, vsync: this);
+      _tabcontroller = TabController(length: 3, vsync: this);
     });
     super.initState();
   }
@@ -33,30 +33,35 @@ class _HomepageState extends State<Homepage>
 
   Widget build(BuildContext context) {
     return Scaffold(
-        drawer: MyDrawer(),
-        body: NestedScrollView(
-          body: Container(
-            color: Colors.purple,
-          ),
+      drawer: MyDrawer(),
+      body: NestedScrollView(
           headerSliverBuilder: (context, innerBoxIsScrolled) => [
-            CustomAppBar(
-              title: TabbBar(
-                tabController: _tabcontroller,
-              ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  Divider(
-                    indent: 25,
-                    endIndent: 25,
-                    color: Theme.of(context).colorScheme.secondary,
+                CustomAppBar(
+                  title: TabbBar(
+                    tabController: _tabcontroller,
                   ),
-                  CurrentLocation(),
-                  DescriptionBox()
-                ],
-              ),
-            )
-          ],
-        ));
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      Divider(
+                        indent: 25,
+                        endIndent: 25,
+                        color: Theme.of(context).colorScheme.secondary,
+                      ),
+                      CurrentLocation(),
+                      DescriptionBox()
+                    ],
+                  ),
+                )
+              ],
+          body: TabBarView(
+            controller: _tabcontroller,
+            children: [
+              Text("ONE"),
+              Text("ONE"),
+              Text("ONE"),
+            ],
+          )),
+    );
   }
 }

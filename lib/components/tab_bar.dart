@@ -17,6 +17,9 @@ class TabbBar extends StatelessWidget {
           Tab(
             icon: Icon(Icons.settings),
           ),
+          Tab(
+            icon: Icon(Icons.person),
+          )
         ],
       ),
     );
