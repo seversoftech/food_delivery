@@ -151,10 +151,10 @@ class Restaurant {
       ],
     ),
     Food(
-      name: "Garlic Bread Side",
+      name: "Loaded Fries Side",
       description:
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
-      imagePath: "lib/images/burgers/garlic_bread_side.jpeg",
+      imagePath: "lib/images/burgers/loadedfries_side.jpeg",
       price: 0.999,
       category: FoodCategory.sides,
       availableAddons: [
@@ -164,10 +164,10 @@ class Restaurant {
       ],
     ),
     Food(
-      name: "Garlic Bread Side",
+      name: "Mac Bread Side",
       description:
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
-      imagePath: "lib/images/burgers/garlic_bread_side.jpeg",
+      imagePath: "lib/images/burgers/onion_rings_side.jpeg",
       price: 0.999,
       category: FoodCategory.sides,
       availableAddons: [
@@ -177,10 +177,10 @@ class Restaurant {
       ],
     ),
     Food(
-      name: "Garlic Bread Side",
+      name: "Onion Rings Side",
       description:
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
-      imagePath: "lib/images/burgers/garlic_bread_side.jpeg",
+      imagePath: "lib/images/burgers/onion_rings_side.jpeg",
       price: 0.999,
       category: FoodCategory.sides,
       availableAddons: [
