@@ -1,7 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_credit_card/flutter_credit_card.dart';
 
 class PaymentPage extends StatelessWidget {
-  const PaymentPage({super.key});
+  GlobalKey<FormState> formKey = GlobalKey<FormState>();
+
+  PaymentPage({super.key});
+  String cardNumber = '';
+  String expiryDate = '';
+  String cardHolderName = '';
+  String cvvCode = '';
+  bool isCvvFocused = false;
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +21,24 @@ class PaymentPage extends StatelessWidget {
         title: Text("Checkout"),
       ),
       body: Column(
-        children: [],
+        children: [
+          CreditCardWidget(
+            cardNumber: cardNumber,
+            expiryDate: expiryDate,
+            cardHolderName: cardHolderName,
+            cvvCode: cvvCode,
+            showBackView: isCvvFocused,
+            onCreditCardWidgetChange: (p0) {},
+          ),
+          CreditCardForm(
+            formKey: formKey,
+              cardNumber: cardNumber,
+              expiryDate: expiryDate,
+              cardHolderName: cardHolderName,
+              cvvCode: cvvCode,
+              onCreditCardModelChange: ((data) {}),
+              )
+        ],
       ),
     );
   }
