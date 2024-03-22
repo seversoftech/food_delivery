@@ -1,4 +1,3 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'food.dart';
 
 class CartItem {
@@ -13,8 +12,10 @@ class CartItem {
   });
 
   double get totalPrice {
-    double addonsPrice =
-        selectedAddons.fold(0, (sum, addon) => sum + addon.price);
+    double addonsPrice = selectedAddons.fold(
+      0,
+      (sum, addon) => sum + addon.price,
+    );
     return (food.price + addonsPrice) * quantity;
   }
 }

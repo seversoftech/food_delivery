@@ -8,7 +8,8 @@ class Restaurant extends ChangeNotifier {
   final List<Food> _menu = [
     // burger
     Food(
-      name: "Classic Cheese Burger",
+      // name: "Well Detailed Spiced Classic Cheese Burger",
+      name: "Cheese Burger",
       description:
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
       imagePath: "lib/images/burgers/cheese_burger.jpeg",
