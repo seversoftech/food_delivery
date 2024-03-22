@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:food_delivery/components/current_location.dart';
 import 'package:food_delivery/components/description_box.dart';
 import 'package:food_delivery/components/drawer.dart';
+import 'package:food_delivery/components/food_tile.dart';
 import 'package:food_delivery/models/food.dart';
 import 'package:food_delivery/models/restaurant.dart';
 import 'package:provider/provider.dart';
@@ -47,10 +48,10 @@ class _HomepageState extends State<Homepage>
       return ListView.builder(
         itemCount: categoryMenu.length,
         physics: NeverScrollableScrollPhysics(),
+        padding: EdgeInsets.zero,
         itemBuilder: (context, index) {
-          return ListTile(
-            title: Text(categoryMenu[index].name),
-          );
+          final food = categoryMenu[index];
+          return FoodTile(food: food, onTap: () {});
         },
       );
     }).toList();

@@ -142,7 +142,7 @@ class Restaurant extends ChangeNotifier{
       name: "Garlic Bread Side",
       description:
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
-      imagePath: "lib/images/burgers/garlic_bread_side.jpeg",
+      imagePath: "lib/images/sides/garlic_bread_side.jpeg",
       price: 0.999,
       category: FoodCategory.sides,
       availableAddons: [
@@ -155,7 +155,7 @@ class Restaurant extends ChangeNotifier{
       name: "Loaded Fries Side",
       description:
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
-      imagePath: "lib/images/burgers/loadedfries_side.jpeg",
+      imagePath: "lib/images/sides/loadedfries_side.jpeg",
       price: 0.999,
       category: FoodCategory.sides,
       availableAddons: [
@@ -168,7 +168,7 @@ class Restaurant extends ChangeNotifier{
       name: "Mac Bread Side",
       description:
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
-      imagePath: "lib/images/burgers/onion_rings_side.jpeg",
+      imagePath: "lib/images/sides/onion_rings_side.jpeg",
       price: 0.999,
       category: FoodCategory.sides,
       availableAddons: [
@@ -181,7 +181,7 @@ class Restaurant extends ChangeNotifier{
       name: "Onion Rings Side",
       description:
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
-      imagePath: "lib/images/burgers/onion_rings_side.jpeg",
+      imagePath: "lib/images/sides/onion_rings_side.jpeg",
       price: 0.999,
       category: FoodCategory.sides,
       availableAddons: [
@@ -194,7 +194,7 @@ class Restaurant extends ChangeNotifier{
       name: "Sweet Potatoes",
       description:
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
-      imagePath: "lib/images/burgers/sweet_potato_side.jpeg",
+      imagePath: "lib/images/sides/sides.jpeg",
       price: 0.999,
       category: FoodCategory.sides,
       availableAddons: [
@@ -209,12 +209,12 @@ class Restaurant extends ChangeNotifier{
       name: "Classic Dessert",
       description:
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
-      imagePath: "lib/images/burgers/dessert1.jpeg",
+      imagePath: "lib/images/desserts/dessert1.jpeg",
       price: 0.999,
       category: FoodCategory.desserts,
       availableAddons: [
         Addon(name: "Extra Cheese", price: 0.099),
-        Addon(name: "Bacon", price: 1.99),
+        Addon(name: "Bacon", price: 1.99),sides
         Addon(name: "Avacado", price: 2.99),
       ],
     ),
@@ -222,7 +222,7 @@ class Restaurant extends ChangeNotifier{
       name: "Cheese dessert",
       description:
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
-      imagePath: "lib/images/burgers/dessert2.jpeg",
+      imagePath: "lib/images/desserts/dessert2.jpeg",
       price: 0.999,
       category: FoodCategory.desserts,
       availableAddons: [
@@ -235,7 +235,7 @@ class Restaurant extends ChangeNotifier{
       name: "B dessert",
       description:
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
-      imagePath: "lib/images/burgers/dessert3.jpeg",
+      imagePath: "lib/images/desserts/dessert3.jpeg",
       price: 0.999,
       category: FoodCategory.desserts,
       availableAddons: [
@@ -248,7 +248,7 @@ class Restaurant extends ChangeNotifier{
       name: "CS dessert",
       description:
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
-      imagePath: "lib/images/burgers/dessert4.jpeg",
+      imagePath: "lib/images/desserts/dessert4.jpeg",
       price: 0.999,
       category: FoodCategory.desserts,
       availableAddons: [
@@ -261,7 +261,7 @@ class Restaurant extends ChangeNotifier{
       name: "Main dessert",
       description:
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
-      imagePath: "lib/images/burgers/dessert5.jpeg",
+      imagePath: "lib/images/desserts/dessert5.jpeg",
       price: 0.999,
       category: FoodCategory.desserts,
       availableAddons: [
@@ -276,7 +276,7 @@ class Restaurant extends ChangeNotifier{
       name: "Classic Drink",
       description:
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
-      imagePath: "lib/images/burgers/drink1.jpeg",
+      imagePath: "lib/images/drinks/drink1.jpeg",
       price: 0.999,
       category: FoodCategory.drinks,
       availableAddons: [
@@ -289,7 +289,7 @@ class Restaurant extends ChangeNotifier{
       name: "Mixed Drink",
       description:
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
-      imagePath: "lib/images/burgers/drink2.jpeg",
+      imagePath: "lib/images/drinks/drink2.jpeg",
       price: 0.999,
       category: FoodCategory.drinks,
       availableAddons: [
@@ -302,7 +302,7 @@ class Restaurant extends ChangeNotifier{
       name: "Maine Drink",
       description:
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
-      imagePath: "lib/images/burgers/drink3.jpeg",
+      imagePath: "lib/images/drinks/drink3.jpeg",
       price: 0.999,
       category: FoodCategory.drinks,
       availableAddons: [
@@ -315,7 +315,7 @@ class Restaurant extends ChangeNotifier{
       name: "InChaos Drink",
       description:
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
-      imagePath: "lib/images/burgers/drink4.jpeg",
+      imagePath: "lib/images/drinks/drink4.jpeg",
       price: 0.999,
       category: FoodCategory.drinks,
       availableAddons: [
@@ -328,7 +328,7 @@ class Restaurant extends ChangeNotifier{
       name: "Parie Drinque",
       description:
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
-      imagePath: "lib/images/burgers/drink5.jpeg",
+      imagePath: "lib/images/drinks/drink5.jpeg",
       price: 0.999,
       category: FoodCategory.drinks,
       availableAddons: [
