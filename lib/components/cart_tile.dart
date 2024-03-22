@@ -18,38 +18,61 @@ class CartTile extends StatelessWidget {
         margin: EdgeInsets.symmetric(horizontal: 25, vertical: 10),
         child: Column(
           children: [
-            Row(
-              children: [
-                ClipRRect(
-                  borderRadius: BorderRadius.circular(8),
-                  child: Image.asset(
-                    cartItem.food.imagePath,
-                    height: 100,
-                    width: 100,
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                children: [
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(8),
+                    child: Image.asset(
+                      cartItem.food.imagePath,
+                      height: 100,
+                      width: 100,
+                    ),
                   ),
-                ),
-                SizedBox(
-                  width: 10,
-                ),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(cartItem.food.name),
-                    Text('₦' + cartItem.food.price.toString()),
-                  ],
-                ),
-                QuantitySelector(
-                  quantity: cartItem.quantity,
-                  food: cartItem.food,
-                  onDecreament: () {
-                    restaurant.removeFromCart(cartItem);
-                  },
-                  onIncreament: () {
-                    restaurant.addToCart(
-                        cartItem.food, cartItem.selectedAddons);
-                  },
-                )
-              ],
+                  SizedBox(
+                    width: 10,
+                  ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(cartItem.food.name),
+                      Text('₦' + cartItem.food.price.toString()),
+                    ],
+                  ),
+                  Spacer(),
+                  QuantitySelector(
+                    quantity: cartItem.quantity,
+                    food: cartItem.food,
+                    onDecreament: () {
+                      restaurant.removeFromCart(cartItem);
+                    },
+                    onIncreament: () {
+                      restaurant.addToCart(
+                          cartItem.food, cartItem.selectedAddons);
+                    },
+                  )
+                ],
+              ),
+            ),
+            SizedBox(
+              height: cartItem.selectedAddons.isEmpty ? 0 : 60,
+              child: ListView(
+                scrollDirection: Axis.horizontal,
+                children: cartItem.selectedAddons
+                    .map(
+                      (addon) => FilterChip(
+                        label: Row(
+                          children: [
+                            Text(addon.name),
+                            Text(' ₦' + addon.price.toString()),
+                          ],
+                        ),
+                        onSelected: (value) {},
+                      ),
+                    )
+                    .toList(),
+              ),
             )
           ],
         ),
