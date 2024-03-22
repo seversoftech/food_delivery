@@ -49,11 +49,16 @@ class CartPage extends StatelessWidget {
               userCart.isEmpty
                   ? Expanded(
                       child: Center(
-                        child: Text(
-                          "Empty Cart",
-                          style: TextStyle(
+                        child: Column(
+                          children: [
+                            Icon(
+                              Icons.delete,
+                              size: 100,
                               color:
-                                  Theme.of(context).colorScheme.inversePrimary),
+                                  Theme.of(context).colorScheme.inversePrimary,
+                            ),
+                            SizedBox(height: 25),
+                          ],
                         ),
                       ),
                     )

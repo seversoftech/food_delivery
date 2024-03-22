@@ -24,10 +24,11 @@ class _LoginPageState extends State<LoginPage> {
 //
 
     Navigator.push(
-        context,
-        MaterialPageRoute(
-          builder: (context) => const Homepage(),
-        ));
+      context,
+      MaterialPageRoute(
+        builder: (context) => const Homepage(),
+      ),
+    );
   }
 
   @override
