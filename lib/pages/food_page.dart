@@ -18,15 +18,28 @@ class _FoodPageState extends State<FoodPage> {
       body: Column(
         children: [
           Image.asset(widget.food.imagePath),
-          Text(widget.food.name),
-          Text(widget.food.description),
-          ListView.builder(
-              shrinkWrap: true,
-              physics: NeverScrollableScrollPhysics(),
-              itemCount: widget.food.availableAddons.length,
-              itemBuilder: (context, index) {
-                return CheckboxListTile(value: false, onChanged: (value) {});
-              }),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(widget.food.name),
+              Text(widget.food.description),
+              ListView.builder(
+                shrinkWrap: true,
+                physics: NeverScrollableScrollPhysics(),
+                itemCount: widget.food.availableAddons.length,
+                itemBuilder: (context, index) {
+                  Addon addon = widget.food.availableAddons[index];
+
+                  return CheckboxListTile(
+                    title: Text(addon.name),
+                    subtitle: Text(addon.price.toString()),
+                    value: false,
+                    onChanged: (value) {},
+                  );
+                },
+              ),
+            ],
+          )
         ],
       ),
     );
