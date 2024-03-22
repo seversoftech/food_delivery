@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_delivery/components/quanity_selector.dart';
 import 'package:food_delivery/models/cart_item.dart';
 import 'package:food_delivery/models/restaurant.dart';
 import 'package:provider/provider.dart';
@@ -11,6 +12,10 @@ class CartTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Consumer<Restaurant>(
       builder: (context, restaurant, child) => Container(
+        decoration: BoxDecoration(
+            color: Theme.of(context).colorScheme.secondary,
+            borderRadius: BorderRadius.circular(8)),
+        margin: EdgeInsets.symmetric(horizontal: 25, vertical: 10),
         child: Column(
           children: [
             Row(
@@ -23,8 +28,26 @@ class CartTile extends StatelessWidget {
                     width: 100,
                   ),
                 ),
+                SizedBox(
+                  width: 10,
+                ),
                 Column(
-                  children: [Text(cartItem.food.name)],
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(cartItem.food.name),
+                    Text('₦' + cartItem.food.price.toString()),
+                  ],
+                ),
+                QuantitySelector(
+                  quantity: cartItem.quantity,
+                  food: cartItem.food,
+                  onDecreament: () {
+                    restaurant.removeFromCart(cartItem);
+                  },
+                  onIncreament: () {
+                    restaurant.addToCart(
+                        cartItem.food, cartItem.selectedAddons);
+                  },
                 )
               ],
             )
