@@ -346,15 +346,17 @@ class Restaurant extends ChangeNotifier {
 
   final List<CartItem> _cart = [];
 
-  void addTocart(Food food, List<Addon> selectedAddons) {
-    CartItem? cartItem = _cart.firstWhereOrNull((item) {
-      bool isSameFood = item.food == food;
+  void addToCart(Food food, List<Addon> selectedAddons) {
+    CartItem? cartItem = _cart.firstWhereOrNull(
+      (item) {
+        bool isSameFood = item.food == food;
 
-      bool isSameAddons =
-          ListEquality().equals(item.selectedAddons, selectedAddons);
+        bool isSameAddons =
+            ListEquality().equals(item.selectedAddons, selectedAddons);
 
-      return isSameFood && isSameAddons;
-    });
+        return isSameFood && isSameAddons;
+      },
+    );
 
     if (cartItem != null) {
       cartItem.quantity++;
@@ -374,6 +376,7 @@ class Restaurant extends ChangeNotifier {
         _cart.removeAt(cartIndex);
       }
     }
+    notifyListeners();
   }
 
   double getTotalPrice() {
