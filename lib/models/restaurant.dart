@@ -337,4 +337,6 @@ class Restaurant {
       ],
     ),
   ];
+
+  List<Food> get menu => _menu;
 }

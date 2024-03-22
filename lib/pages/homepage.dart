@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:food_delivery/components/current_location.dart';
 import 'package:food_delivery/components/description_box.dart';
 import 'package:food_delivery/components/drawer.dart';
+import 'package:food_delivery/models/food.dart';
 
 import '../components/silver_app_bar.dart';
 import '../components/tab_bar.dart';
@@ -20,7 +21,8 @@ class _HomepageState extends State<Homepage>
   @override
   void initState() {
     setState(() {
-      _tabcontroller = TabController(length: 3, vsync: this);
+      _tabcontroller =
+          TabController(length: FoodCategory.values.length, vsync: this);
     });
     super.initState();
   }
@@ -62,7 +64,14 @@ class _HomepageState extends State<Homepage>
               ),
               ListView.builder(
                 itemBuilder: (context, index) => Text("TWO"),
-              ), ListView.builder(
+              ),
+              ListView.builder(
+                itemBuilder: (context, index) => Text("THREE"),
+              ),
+              ListView.builder(
+                itemBuilder: (context, index) => Text("THREE"),
+              ),
+              ListView.builder(
                 itemBuilder: (context, index) => Text("THREE"),
               ),
             ],
