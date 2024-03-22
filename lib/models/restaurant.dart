@@ -205,12 +205,12 @@ class Restaurant {
 
     // desserts
     Food(
-      name: "Classic Cheese Burger",
+      name: "Classic Dessert",
       description:
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
-      imagePath: "lib/images/burgers/cheese_burger.jpeg",
+      imagePath: "lib/images/burgers/dessert1.jpeg",
       price: 0.999,
-      category: FoodCategory.burgers,
+      category: FoodCategory.desserts,
       availableAddons: [
         Addon(name: "Extra Cheese", price: 0.099),
         Addon(name: "Bacon", price: 1.99),
@@ -218,12 +218,12 @@ class Restaurant {
       ],
     ),
     Food(
-      name: "Classic Cheese Burger",
+      name: "Cheese dessert",
       description:
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
-      imagePath: "lib/images/burgers/cheese_burger.jpeg",
+      imagePath: "lib/images/burgers/dessert2.jpeg",
       price: 0.999,
-      category: FoodCategory.burgers,
+      category: FoodCategory.desserts,
       availableAddons: [
         Addon(name: "Extra Cheese", price: 0.099),
         Addon(name: "Bacon", price: 1.99),
@@ -231,12 +231,12 @@ class Restaurant {
       ],
     ),
     Food(
-      name: "Classic Cheese Burger",
+      name: "B dessert",
       description:
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
-      imagePath: "lib/images/burgers/cheese_burger.jpeg",
+      imagePath: "lib/images/burgers/dessert3.jpeg",
       price: 0.999,
-      category: FoodCategory.burgers,
+      category: FoodCategory.desserts,
       availableAddons: [
         Addon(name: "Extra Cheese", price: 0.099),
         Addon(name: "Bacon", price: 1.99),
@@ -244,12 +244,12 @@ class Restaurant {
       ],
     ),
     Food(
-      name: "Classic Cheese Burger",
+      name: "CS dessert",
       description:
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
-      imagePath: "lib/images/burgers/cheese_burger.jpeg",
+      imagePath: "lib/images/burgers/dessert4.jpeg",
       price: 0.999,
-      category: FoodCategory.burgers,
+      category: FoodCategory.desserts,
       availableAddons: [
         Addon(name: "Extra Cheese", price: 0.099),
         Addon(name: "Bacon", price: 1.99),
@@ -257,12 +257,12 @@ class Restaurant {
       ],
     ),
     Food(
-      name: "Classic Cheese Burger",
+      name: "Main dessert",
       description:
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
-      imagePath: "lib/images/burgers/cheese_burger.jpeg",
+      imagePath: "lib/images/burgers/dessert5.jpeg",
       price: 0.999,
-      category: FoodCategory.burgers,
+      category: FoodCategory.desserts,
       availableAddons: [
         Addon(name: "Extra Cheese", price: 0.099),
         Addon(name: "Bacon", price: 1.99),
@@ -272,12 +272,12 @@ class Restaurant {
 
     // drinks
     Food(
-      name: "Classic Cheese Burger",
+      name: "Classic Drink",
       description:
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
-      imagePath: "lib/images/burgers/cheese_burger.jpeg",
+      imagePath: "lib/images/burgers/drink1.jpeg",
       price: 0.999,
-      category: FoodCategory.burgers,
+      category: FoodCategory.drinks,
       availableAddons: [
         Addon(name: "Extra Cheese", price: 0.099),
         Addon(name: "Bacon", price: 1.99),
@@ -285,12 +285,12 @@ class Restaurant {
       ],
     ),
     Food(
-      name: "Classic Cheese Burger",
+      name: "Mixed Drink",
       description:
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
-      imagePath: "lib/images/burgers/cheese_burger.jpeg",
+      imagePath: "lib/images/burgers/drink2.jpeg",
       price: 0.999,
-      category: FoodCategory.burgers,
+      category: FoodCategory.drinks,
       availableAddons: [
         Addon(name: "Extra Cheese", price: 0.099),
         Addon(name: "Bacon", price: 1.99),
@@ -298,12 +298,12 @@ class Restaurant {
       ],
     ),
     Food(
-      name: "Classic Cheese Burger",
+      name: "Maine Drink",
       description:
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
-      imagePath: "lib/images/burgers/cheese_burger.jpeg",
+      imagePath: "lib/images/burgers/drink3.jpeg",
       price: 0.999,
-      category: FoodCategory.burgers,
+      category: FoodCategory.drinks,
       availableAddons: [
         Addon(name: "Extra Cheese", price: 0.099),
         Addon(name: "Bacon", price: 1.99),
@@ -311,12 +311,12 @@ class Restaurant {
       ],
     ),
     Food(
-      name: "Classic Cheese Burger",
+      name: "InChaos Drink",
       description:
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
-      imagePath: "lib/images/burgers/cheese_burger.jpeg",
+      imagePath: "lib/images/burgers/drink4.jpeg",
       price: 0.999,
-      category: FoodCategory.burgers,
+      category: FoodCategory.drinks,
       availableAddons: [
         Addon(name: "Extra Cheese", price: 0.099),
         Addon(name: "Bacon", price: 1.99),
@@ -324,12 +324,12 @@ class Restaurant {
       ],
     ),
     Food(
-      name: "Classic Cheese Burger",
+      name: "Parie Drinque",
       description:
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
-      imagePath: "lib/images/burgers/cheese_burger.jpeg",
+      imagePath: "lib/images/burgers/drink5.jpeg",
       price: 0.999,
-      category: FoodCategory.burgers,
+      category: FoodCategory.drinks,
       availableAddons: [
         Addon(name: "Extra Cheese", price: 0.099),
         Addon(name: "Bacon", price: 1.99),
