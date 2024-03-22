@@ -23,6 +23,8 @@ class FoodPage extends StatefulWidget {
 
 class _FoodPageState extends State<FoodPage> {
   void addToCart(Food food, Map<Addon, bool> selectedAddons) {
+    Navigator.pop(context);
+
     List<Addon> currentlySelectedAddons = [];
     for (Addon addon in widget.food.availableAddons) {
       if (widget.selectedAddons[addon] == true) {

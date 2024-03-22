@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_delivery/pages/cart_page.dart';
 
 class CustomAppBar extends StatelessWidget {
   final Widget child;
@@ -32,8 +33,11 @@ class CustomAppBar extends StatelessWidget {
       ),
       actions: [
         IconButton(
-          onPressed: () {},
           icon: Icon(Icons.shopping_cart),
+          onPressed: () {
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => CartPage()));
+          },
         ),
       ],
     );
