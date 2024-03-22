@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:food_delivery/components/current_location.dart';
 import 'package:food_delivery/components/description_box.dart';
@@ -6,6 +5,7 @@ import 'package:food_delivery/components/drawer.dart';
 import 'package:food_delivery/components/food_tile.dart';
 import 'package:food_delivery/models/food.dart';
 import 'package:food_delivery/models/restaurant.dart';
+import 'package:food_delivery/pages/food_page.dart';
 import 'package:provider/provider.dart';
 
 import '../components/silver_app_bar.dart';
@@ -51,7 +51,12 @@ class _HomepageState extends State<Homepage>
         padding: EdgeInsets.zero,
         itemBuilder: (context, index) {
           final food = categoryMenu[index];
-          return FoodTile(food: food, onTap: () {});
+          return FoodTile(
+              food: food,
+              onTap: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => FoodPage(food: food))));
         },
       );
     }).toList();
