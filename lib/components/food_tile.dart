@@ -22,8 +22,19 @@ class FoodTile extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(food.name),
-                      Text(food.price.toString()),
-                      Text(food.description)
+                      Text(
+                        '₦ ' + food.price.toString(),
+                        style: TextStyle(
+                          color: Theme.of(context).colorScheme.primary,
+                        ),
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Text(food.description,
+                          style: TextStyle(
+                            color: Theme.of(context).colorScheme.inversePrimary,
+                          ))
                     ],
                   ),
                 ),
