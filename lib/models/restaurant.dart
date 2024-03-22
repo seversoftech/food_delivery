@@ -1,5 +1,8 @@
+import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
+import 'package:food_delivery/models/cart_item.dart';
 import 'package:food_delivery/models/food.dart';
+import 'package:collection/collection.dart';
 
 class Restaurant extends ChangeNotifier {
   final List<Food> _menu = [
@@ -340,4 +343,17 @@ class Restaurant extends ChangeNotifier {
   ];
 
   List<Food> get menu => _menu;
+
+  final List<CartItem> _cart = [];
+
+  void addTocart(Food food, List<Addon> selectedAddons) {
+    CartItem? cartItem = _cart.firstWhereOrNull((item) {
+      bool isSameFood = item.food == food;
+
+      bool isSameAddons =
+          ListEquality().equals(item.selectedAddons, selectedAddons);
+
+      return isSameFood && isSameAddons;
+    });
+  }
 }
