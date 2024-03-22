@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery/models/food.dart';
 
-class Restaurant extends ChangeNotifier{
+class Restaurant extends ChangeNotifier {
   final List<Food> _menu = [
     // burger
     Food(
@@ -168,7 +168,7 @@ class Restaurant extends ChangeNotifier{
       name: "Mac Bread Side",
       description:
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
-      imagePath: "lib/images/sides/onion_rings_side.jpeg",
+      imagePath: "lib/images/sides/mac_side.jpeg",
       price: 0.999,
       category: FoodCategory.sides,
       availableAddons: [
@@ -194,7 +194,7 @@ class Restaurant extends ChangeNotifier{
       name: "Sweet Potatoes",
       description:
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
-      imagePath: "lib/images/sides/sides.jpeg",
+      imagePath: "lib/images/sides/sweet_potato_side.jpeg",
       price: 0.999,
       category: FoodCategory.sides,
       availableAddons: [
@@ -214,7 +214,7 @@ class Restaurant extends ChangeNotifier{
       category: FoodCategory.desserts,
       availableAddons: [
         Addon(name: "Extra Cheese", price: 0.099),
-        Addon(name: "Bacon", price: 1.99),sides
+        Addon(name: "Bacon", price: 1.99),
         Addon(name: "Avacado", price: 2.99),
       ],
     ),
