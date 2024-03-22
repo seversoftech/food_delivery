@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:food_delivery/components/button.dart';
 import 'package:food_delivery/components/cart_tile.dart';
 import 'package:food_delivery/models/restaurant.dart';
+import 'package:food_delivery/pages/payment_page.dart';
 import 'package:provider/provider.dart';
 
 class CartPage extends StatelessWidget {
@@ -14,6 +16,7 @@ class CartPage extends StatelessWidget {
 
         return Scaffold(
           appBar: AppBar(
+            elevation: 0,
             backgroundColor: Colors.transparent,
             foregroundColor: Theme.of(context).colorScheme.inversePrimary,
             title: Text('Cart'),
@@ -46,32 +49,43 @@ class CartPage extends StatelessWidget {
           ),
           body: Column(
             children: [
-              userCart.isEmpty
-                  ? Expanded(
-                      child: Center(
-                        child: Column(
-                          children: [
-                            Icon(
-                              Icons.delete,
-                              size: 100,
-                              color:
-                                  Theme.of(context).colorScheme.inversePrimary,
+              Expanded(
+                child: Column(
+                  children: [
+                    userCart.isEmpty
+                        ? Expanded(
+                            child: Center(
+                              child: Icon(
+                                Icons.delete_forever_rounded,
+                                size: 100,
+                                color: Theme.of(context)
+                                    .colorScheme
+                                    .inversePrimary,
+                              ),
+                              // SizedBox(height: 25),
                             ),
-                            SizedBox(height: 25),
-                          ],
-                        ),
-                      ),
-                    )
-                  : Expanded(
-                      child: ListView.builder(
-                        itemCount: userCart.length,
-                        itemBuilder: (context, index) {
-                          final cartItem = userCart[index];
+                          )
+                        : Expanded(
+                            child: ListView.builder(
+                              itemCount: userCart.length,
+                              itemBuilder: (context, index) {
+                                final cartItem = userCart[index];
 
-                          return CartTile(cartItem: cartItem);
-                        },
-                      ),
-                    ),
+                                return CartTile(cartItem: cartItem);
+                              },
+                            ),
+                          ),
+                  ],
+                ),
+              ),
+              ClickButton(
+                text: "Checkout",
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: ((context) => PaymentPage())));
+                },
+              ),
+              SizedBox(height: 25)
             ],
           ),
         );
