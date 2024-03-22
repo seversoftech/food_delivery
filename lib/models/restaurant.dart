@@ -355,5 +355,21 @@ class Restaurant extends ChangeNotifier {
 
       return isSameFood && isSameAddons;
     });
+
+    if (cartItem != null) {
+      cartItem.quantity++;
+    } else {
+      _cart.add(CartItem(food: food, selectedAddons: selectedAddons));
+    }
+    notifyListeners();
+  }
+
+  void removeFromCart(CartItem cartItem) {
+    int cartIndex = _cart.indexOf(cartItem);
+
+
+    if (cartItem !=-1){
+      if 
+    }
   }
 }
