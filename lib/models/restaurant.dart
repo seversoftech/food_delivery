@@ -447,7 +447,7 @@ class Restaurant extends ChangeNotifier {
 
   String _formatAddons(List<Addon> addons) {
     return addons
-        .map((addon) => "${addon} (${_formatPrice(addon.price)})")
+        .map((addon) => "${addon.name} (${_formatPrice(addon.price)})")
         .join(", ");
   }
   //ROOT
