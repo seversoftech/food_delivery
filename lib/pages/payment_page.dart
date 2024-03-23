@@ -46,12 +46,15 @@ class _PaymentPageState extends State<PaymentPage> {
                   child: Text("Cancel"),
                 ),
                 TextButton(
-                  onPressed: () => Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => DeliveryProgressPage(),
-                    ),
-                  ),
+                  onPressed: () {
+                    Navigator.pop(context);
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => DeliveryProgressPage(),
+                      ),
+                    );
+                  },
                   child: Text('Yes'),
                 ),
               ],
