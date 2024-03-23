@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_credit_card/flutter_credit_card.dart';
 
 import '../components/button.dart';
+import 'delivery_progress_page.dart';
 
 class PaymentPage extends StatefulWidget {
   PaymentPage({super.key});
@@ -33,9 +34,27 @@ class _PaymentPageState extends State<PaymentPage> {
                 child: ListBody(
                   children: [
                     Text("Card Number:$cardNumber"),
+                    Text("Expiry Date:$expiryDate"),
+                    Text("Card Holder name:$cardHolderName"),
+                    Text("CVV:$cvvCode"),
                   ],
                 ),
               ),
+              actions: [
+                TextButton(
+                  onPressed: () => Navigator.pop(context),
+                  child: Text("Cancel"),
+                ),
+                TextButton(
+                  onPressed: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => DeliveryProgressPage(),
+                    ),
+                  ),
+                  child: Text('Yes'),
+                ),
+              ],
             )),
       );
     }
@@ -81,9 +100,7 @@ class _PaymentPageState extends State<PaymentPage> {
             text: "Pay now",
             onTap: userTappedPay,
           ),
-          SizedBox(
-            height: 25,
-          )
+          SizedBox(height: 25)
         ],
       ),
     );
