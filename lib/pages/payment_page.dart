@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_credit_card/flutter_credit_card.dart';
 
+import '../components/button.dart';
+
 class PaymentPage extends StatefulWidget {
   PaymentPage({super.key});
 
@@ -20,6 +22,25 @@ class _PaymentPageState extends State<PaymentPage> {
   String cvvCode = '';
 
   bool isCvvFocused = false;
+
+  void userTappedPay() {
+    if (formKey.currentState!.validate()) {
+      showDialog(
+        context: context,
+        builder: ((context) => AlertDialog(
+              title: Text("Confirm Payment"),
+              content: SingleChildScrollView(
+                child: ListBody(
+                  children: [
+                    Text("Card Number:$cardNumber"),
+                  ],
+                ),
+              ),
+            )),
+      );
+    }
+    ;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -54,6 +75,14 @@ class _PaymentPageState extends State<PaymentPage> {
                 cvvCode = data.cvvCode;
               });
             }),
+          ),
+          Spacer(),
+          ClickButton(
+            text: "Pay now",
+            onTap: userTappedPay,
+          ),
+          SizedBox(
+            height: 25,
           )
         ],
       ),
