@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_delivery/services/auth/auth_service.dart';
 import 'package:food_delivery/services/auth/login_or_register.dart';
 import 'package:food_delivery/components/drawer_tile.dart';
 
@@ -6,6 +7,11 @@ import '../pages/settings_page.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({super.key});
+
+  void logout() {
+    final authService = AuthService();
+    authService.signOut();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -46,15 +52,12 @@ class MyDrawer extends StatelessWidget {
           ),
           Spacer(),
           DrawerTile(
-            text: 'L O G O U T',
-            icon: Icons.logout,
-            onTap: () => Navigator.pushReplacement(
-              context,
-              MaterialPageRoute(
-                builder: (context) => LoginOrRegister(),
-              ),
-            ),
-          ),
+              text: 'L O G O U T',
+              icon: Icons.logout,
+              onTap: () {
+                logout();
+                Navigator.pop(context);
+              }),
           SizedBox(
             height: 25,
           )
