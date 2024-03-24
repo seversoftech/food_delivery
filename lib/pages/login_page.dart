@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery/components/button.dart';
 import 'package:food_delivery/components/textfield.dart';
+import 'package:food_delivery/services/auth/auth_service.dart';
 
 import 'homepage.dart';
 
@@ -18,17 +19,21 @@ class _LoginPageState extends State<LoginPage> {
 
   final TextEditingController passController = TextEditingController();
 
-  void login() {
+  void login() async {
+//
+    final _authService = AuthService();
+    try {
+      await _authService.signInWithEmailPassword(
+          emailController.text, passController.text);
+    } catch (e) {
+      showDialog(
+          context: context,
+          builder: (context) => AlertDialog(
+                title: Text(e.toString()),
+              ));
+    }
 //
 
-//
-
-    Navigator.push(
-      context,
-      MaterialPageRoute(
-        builder: (context) => const Homepage(),
-      ),
-    );
   }
 
   @override
