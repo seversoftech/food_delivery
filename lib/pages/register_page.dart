@@ -79,7 +79,7 @@ class _RegisterPageState extends State<RegisterPage> {
                 obscureText: true),
             SizedBox(height: 10),
             ClickButton(
-              text: 'Reister',
+              text: 'Register',
               onTap: () {},
             ),
             SizedBox(height: 25),
