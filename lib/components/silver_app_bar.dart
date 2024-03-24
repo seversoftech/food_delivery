@@ -19,7 +19,7 @@ class CustomAppBar extends StatelessWidget {
       collapsedHeight: 340,
       backgroundColor: Theme.of(context).colorScheme.background,
       foregroundColor: Theme.of(context).colorScheme.inversePrimary,
-      title: (Text('Moonlight Sonata')),
+      title: (Text('Moonlight Dinner')),
       centerTitle: true,
       flexibleSpace: FlexibleSpaceBar(
         background: Padding(
