@@ -2,7 +2,6 @@ import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
 import 'package:food_delivery/models/cart_item.dart';
 import 'package:food_delivery/models/food.dart';
-import 'package:collection/collection.dart';
 import 'package:intl/intl.dart';
 
 class Restaurant extends ChangeNotifier {
@@ -10,7 +9,7 @@ class Restaurant extends ChangeNotifier {
     // burger
     Food(
       // name: "Well Detailed Spiced Classic Cheese Burger",
-      name: "Cheese Burger",
+      name: "Cheese Classsic Burger",
       description:
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
       imagePath: "lib/images/burgers/cheese_burger.jpeg",
