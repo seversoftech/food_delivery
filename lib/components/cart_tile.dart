@@ -41,23 +41,26 @@ class CartTile extends StatelessWidget {
                         cartItem.food.name,
                         overflow: TextOverflow.ellipsis,
                       ),
-                      Text('₦' + cartItem.food.price.toString(),
-                          style: TextStyle(
-                              color: Theme.of(context).colorScheme.primary)),
+                      Text(
+                        '₦' + cartItem.food.price.toString(),
+                        style: TextStyle(
+                            color: Theme.of(context).colorScheme.primary),
+                      ),
+                      SizedBox(height: 10),
+                      QuantitySelector(
+                        quantity: cartItem.quantity,
+                        food: cartItem.food,
+                        onDecreament: () {
+                          restaurant.removeFromCart(cartItem);
+                        },
+                        onIncreament: () {
+                          restaurant.addToCart(
+                              cartItem.food, cartItem.selectedAddons);
+                        },
+                      )
                     ],
                   ),
                   Spacer(),
-                  QuantitySelector(
-                    quantity: cartItem.quantity,
-                    food: cartItem.food,
-                    onDecreament: () {
-                      restaurant.removeFromCart(cartItem);
-                    },
-                    onIncreament: () {
-                      restaurant.addToCart(
-                          cartItem.food, cartItem.selectedAddons);
-                    },
-                  )
                 ],
               ),
             ),
