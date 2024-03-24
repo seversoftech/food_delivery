@@ -33,7 +33,15 @@ class _LoginPageState extends State<LoginPage> {
               ));
     }
 //
-
+    void forgotPassword() {
+      showDialog(
+        context: context,
+        builder: ((context) => AlertDialog(
+              backgroundColor: Theme.of(context).colorScheme.background,
+              title: Text("Forget Password"),
+            )),
+      );
+    }
   }
 
   @override
