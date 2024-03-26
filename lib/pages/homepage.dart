@@ -24,10 +24,12 @@ class _HomepageState extends State<Homepage>
 
   @override
   void initState() {
-    setState(() {
-      _tabcontroller =
-          TabController(length: FoodCategory.values.length, vsync: this);
-    });
+    setState(
+      () {
+        _tabcontroller =
+            TabController(length: FoodCategory.values.length, vsync: this);
+      },
+    );
     super.initState();
   }
 
@@ -77,7 +79,7 @@ class _HomepageState extends State<Homepage>
             child: Column(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
-               Divider(
+                Divider(
                   indent: 25,
                   endIndent: 25,
                   color: Theme.of(context).colorScheme.secondary,
