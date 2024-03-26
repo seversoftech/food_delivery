@@ -52,11 +52,14 @@ class _HomepageState extends State<Homepage>
         itemBuilder: (context, index) {
           final food = categoryMenu[index];
           return FoodTile(
-              food: food,
-              onTap: () => Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => FoodPage(food: food))));
+            food: food,
+            onTap: () => Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => FoodPage(food: food),
+              ),
+            ),
+          );
         },
       );
     }).toList();
@@ -74,7 +77,7 @@ class _HomepageState extends State<Homepage>
             child: Column(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                Divider(
+               Divider(
                   indent: 25,
                   endIndent: 25,
                   color: Theme.of(context).colorScheme.secondary,

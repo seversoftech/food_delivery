@@ -29,10 +29,12 @@ class _DeliveryProgressPageState extends State<DeliveryProgressPage> {
         title: Text('Devivery in progress...'),
       ),
       bottomNavigationBar: _buildBottomNavBar(context),
-      body: Column(
-        children: [
-          Receipt(),
-        ],
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Receipt(),
+          ],
+        ),
       ),
     );
   }
