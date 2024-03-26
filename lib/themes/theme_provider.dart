@@ -11,7 +11,7 @@ class ThemeProvider with ChangeNotifier {
   bool get isDarkMode => _themeData == darkMode;
 
   set themeData(ThemeData themeData) {
-    AppBarTheme(centerTitle: true);
+   
     _themeData = themeData;
     notifyListeners();
   }
