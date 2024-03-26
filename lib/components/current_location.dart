@@ -3,8 +3,8 @@ import 'package:food_delivery/models/restaurant.dart';
 import 'package:provider/provider.dart';
 
 class CurrentLocation extends StatelessWidget {
-  const CurrentLocation({super.key});
-
+  CurrentLocation({super.key});
+  TextEditingController textController = TextEditingController();
   void openLocationSearchBox(BuildContext context) {
     showDialog(
       context: context,
@@ -17,11 +17,19 @@ class CurrentLocation extends StatelessWidget {
         ),
         actions: [
           MaterialButton(
-            onPressed: () => Navigator.pop(context),
+            onPressed: () {
+              Navigator.pop(context);
+              textController.clear();
+            },
             child: Text('Cancel'),
           ),
           MaterialButton(
-            onPressed: () => Navigator.pop(context),
+            onPressed: () {
+              String newAddress = textController.text;
+              context.read<Restaurant>().updateDelivveryAddress(newAddress);
+              Navigator.pop(context);
+              textController.clear();
+            },
             child: Text('Save'),
           ),
         ],
