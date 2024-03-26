@@ -348,6 +348,8 @@ class Restaurant extends ChangeNotifier {
 
   final List<CartItem> _cart = [];
 
+  String _deliveryAddress = 'Barika Street, UI, Ibadan';
+
   void addToCart(Food food, List<Addon> selectedAddons) {
     CartItem? cartItem = _cart.firstWhereOrNull(
       (item) {
