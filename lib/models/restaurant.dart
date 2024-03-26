@@ -345,6 +345,7 @@ class Restaurant extends ChangeNotifier {
 
   List<Food> get menu => _menu;
   List<CartItem> get cart => _cart;
+  String get deliveryAddress => _deliveryAddress;
 
   final List<CartItem> _cart = [];
 
@@ -408,6 +409,11 @@ class Restaurant extends ChangeNotifier {
 
   void clearCart() {
     _cart.clear();
+    notifyListeners();
+  }
+
+  void updateDelivveryAddress(String newAddress) {
+    _deliveryAddress = newAddress;
     notifyListeners();
   }
 
