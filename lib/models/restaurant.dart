@@ -14,7 +14,7 @@ class Restaurant extends ChangeNotifier {
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
       imagePath: "lib/images/burgers/cheese_burger.jpeg",
       price: 160.999,
-      category: FoodCategory.burgers,
+      category: FoodCategory.Burgers,
       availableAddons: [
         Addon(name: "Extra Cheese", price: 0.099),
         Addon(name: "Bacon", price: 1.99),
@@ -27,7 +27,7 @@ class Restaurant extends ChangeNotifier {
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
       imagePath: "lib/images/burgers/aloha_burger.jpeg",
       price: 209,
-      category: FoodCategory.burgers,
+      category: FoodCategory.Burgers,
       availableAddons: [
         Addon(name: "Extra Cheese", price: 0.099),
         Addon(name: "Bacon", price: 1.99),
@@ -40,7 +40,7 @@ class Restaurant extends ChangeNotifier {
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
       imagePath: "lib/images/burgers/bbq_burger.jpeg",
       price: 199,
-      category: FoodCategory.burgers,
+      category: FoodCategory.Burgers,
       availableAddons: [
         Addon(name: "Extra Cheese", price: 0.099),
         Addon(name: "Bacon", price: 1.99),
@@ -53,7 +53,7 @@ class Restaurant extends ChangeNotifier {
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
       imagePath: "lib/images/burgers/bluemoon_burger.jpeg",
       price: 999,
-      category: FoodCategory.burgers,
+      category: FoodCategory.Burgers,
       availableAddons: [
         Addon(name: "Extra Cheese", price: 0.099),
         Addon(name: "Bacon", price: 1.99),
@@ -66,7 +66,7 @@ class Restaurant extends ChangeNotifier {
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
       imagePath: "lib/images/burgers/vege_burger.jpeg",
       price: 499,
-      category: FoodCategory.burgers,
+      category: FoodCategory.Burgers,
       availableAddons: [
         Addon(name: "Extra Cheese", price: 0.099),
         Addon(name: "Bacon", price: 1.99),
@@ -81,7 +81,7 @@ class Restaurant extends ChangeNotifier {
           "A tasty salad with meted chedder, lettuse, tomato, and a hint of onion and pickle",
       imagePath: "lib/images/salads/asiansesame_salad.jpeg",
       price: 399,
-      category: FoodCategory.salads,
+      category: FoodCategory.Salads,
       availableAddons: [
         Addon(name: "Extra Cheese", price: 0.099),
         Addon(name: "Bacon", price: 1.99),
@@ -94,7 +94,7 @@ class Restaurant extends ChangeNotifier {
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
       imagePath: "lib/images/salads/caesar_salad.jpeg",
       price: 100,
-      category: FoodCategory.salads,
+      category: FoodCategory.Salads,
       availableAddons: [
         Addon(name: "Extra Cheese", price: 0.099),
         Addon(name: "Bacon", price: 1.99),
@@ -107,7 +107,7 @@ class Restaurant extends ChangeNotifier {
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
       imagePath: "lib/images/salads/greek_salad.jpeg",
       price: 29.99,
-      category: FoodCategory.salads,
+      category: FoodCategory.Salads,
       availableAddons: [
         Addon(name: "Extra Cheese", price: 0.099),
         Addon(name: "Bacon", price: 1.99),
@@ -120,7 +120,7 @@ class Restaurant extends ChangeNotifier {
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
       imagePath: "lib/images/salads/quinoa_salad.jpeg",
       price: 94,
-      category: FoodCategory.salads,
+      category: FoodCategory.Salads,
       availableAddons: [
         Addon(name: "Extra Cheese", price: 0.099),
         Addon(name: "Bacon", price: 1.99),
@@ -133,7 +133,7 @@ class Restaurant extends ChangeNotifier {
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
       imagePath: "lib/images/salads/southwest_salad.jpeg",
       price: 340,
-      category: FoodCategory.salads,
+      category: FoodCategory.Salads,
       availableAddons: [
         Addon(name: "Extra Cheese", price: 0.099),
         Addon(name: "Bacon", price: 1.99),
@@ -148,7 +148,7 @@ class Restaurant extends ChangeNotifier {
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
       imagePath: "lib/images/sides/garlic_bread_side.jpeg",
       price: 300,
-      category: FoodCategory.sides,
+      category: FoodCategory.Sides,
       availableAddons: [
         Addon(name: "Extra Cheese", price: 0.099),
         Addon(name: "Bacon", price: 1.99),
@@ -161,7 +161,7 @@ class Restaurant extends ChangeNotifier {
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
       imagePath: "lib/images/sides/loadedfries_side.jpeg",
       price: 233,
-      category: FoodCategory.sides,
+      category: FoodCategory.Sides,
       availableAddons: [
         Addon(name: "Extra Cheese", price: 0.099),
         Addon(name: "Bacon", price: 1.99),
@@ -174,7 +174,7 @@ class Restaurant extends ChangeNotifier {
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
       imagePath: "lib/images/sides/mac_side.jpeg",
       price: 454,
-      category: FoodCategory.sides,
+      category: FoodCategory.Sides,
       availableAddons: [
         Addon(name: "Extra Cheese", price: 0.099),
         Addon(name: "Bacon", price: 1.99),
@@ -187,7 +187,7 @@ class Restaurant extends ChangeNotifier {
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
       imagePath: "lib/images/sides/onion_rings_side.jpeg",
       price: 122,
-      category: FoodCategory.sides,
+      category: FoodCategory.Sides,
       availableAddons: [
         Addon(name: "Extra Cheese", price: 0.099),
         Addon(name: "Bacon", price: 1.99),
@@ -200,7 +200,7 @@ class Restaurant extends ChangeNotifier {
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
       imagePath: "lib/images/sides/sweet_potato_side.jpeg",
       price: 544,
-      category: FoodCategory.sides,
+      category: FoodCategory.Sides,
       availableAddons: [
         Addon(name: "Extra Cheese", price: 0.099),
         Addon(name: "Bacon", price: 1.99),
@@ -215,7 +215,7 @@ class Restaurant extends ChangeNotifier {
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
       imagePath: "lib/images/desserts/dessert1.jpeg",
       price: 233,
-      category: FoodCategory.desserts,
+      category: FoodCategory.Drinks,
       availableAddons: [
         Addon(name: "Extra Cheese", price: 0.099),
         Addon(name: "Bacon", price: 1.99),
@@ -228,7 +228,7 @@ class Restaurant extends ChangeNotifier {
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
       imagePath: "lib/images/desserts/dessert2.jpeg",
       price: 543,
-      category: FoodCategory.desserts,
+      category: FoodCategory.Desserts,
       availableAddons: [
         Addon(name: "Extra Cheese", price: 0.099),
         Addon(name: "Bacon", price: 1.99),
@@ -241,7 +241,7 @@ class Restaurant extends ChangeNotifier {
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
       imagePath: "lib/images/desserts/dessert3.jpeg",
       price: 677,
-      category: FoodCategory.desserts,
+      category: FoodCategory.Desserts,
       availableAddons: [
         Addon(name: "Extra Cheese", price: 0.099),
         Addon(name: "Bacon", price: 1.99),
@@ -254,7 +254,7 @@ class Restaurant extends ChangeNotifier {
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
       imagePath: "lib/images/desserts/dessert4.jpeg",
       price: 910,
-      category: FoodCategory.desserts,
+      category: FoodCategory.Desserts,
       availableAddons: [
         Addon(name: "Extra Cheese", price: 0.099),
         Addon(name: "Bacon", price: 1.99),
@@ -267,7 +267,7 @@ class Restaurant extends ChangeNotifier {
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
       imagePath: "lib/images/desserts/dessert5.jpeg",
       price: 300,
-      category: FoodCategory.desserts,
+      category: FoodCategory.Desserts,
       availableAddons: [
         Addon(name: "Extra Cheese", price: 0.099),
         Addon(name: "Bacon", price: 1.99),
@@ -282,7 +282,7 @@ class Restaurant extends ChangeNotifier {
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
       imagePath: "lib/images/drinks/drink1.jpeg",
       price: 573,
-      category: FoodCategory.drinks,
+      category: FoodCategory.Drinks,
       availableAddons: [
         Addon(name: "Extra Cheese", price: 0.099),
         Addon(name: "Bacon", price: 1.99),
@@ -295,7 +295,7 @@ class Restaurant extends ChangeNotifier {
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
       imagePath: "lib/images/drinks/drink2.jpeg",
       price: 102,
-      category: FoodCategory.drinks,
+      category: FoodCategory.Drinks,
       availableAddons: [
         Addon(name: "Extra Cheese", price: 0.099),
         Addon(name: "Bacon", price: 1.99),
@@ -308,7 +308,7 @@ class Restaurant extends ChangeNotifier {
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
       imagePath: "lib/images/drinks/drink3.jpeg",
       price: 560,
-      category: FoodCategory.drinks,
+      category: FoodCategory.Drinks,
       availableAddons: [
         Addon(name: "Extra Cheese", price: 0.099),
         Addon(name: "Bacon", price: 1.99),
@@ -321,7 +321,7 @@ class Restaurant extends ChangeNotifier {
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
       imagePath: "lib/images/drinks/drink4.jpeg",
       price: 630,
-      category: FoodCategory.drinks,
+      category: FoodCategory.Drinks,
       availableAddons: [
         Addon(name: "Extra Cheese", price: 0.099),
         Addon(name: "Bacon", price: 1.99),
@@ -334,7 +334,7 @@ class Restaurant extends ChangeNotifier {
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
       imagePath: "lib/images/drinks/drink5.jpeg",
       price: 230,
-      category: FoodCategory.drinks,
+      category: FoodCategory.Drinks,
       availableAddons: [
         Addon(name: "Extra Cheese", price: 0.099),
         Addon(name: "Bacon", price: 1.99),
