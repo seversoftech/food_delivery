@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:food_delivery/models/restaurant.dart';
+import 'package:provider/provider.dart';
 
 class CurrentLocation extends StatelessWidget {
   const CurrentLocation({super.key});
@@ -44,15 +46,17 @@ class CurrentLocation extends StatelessWidget {
             onTap: () => openLocationSearchBox(context),
             child: Row(
               children: [
-                Text(
-                  "Barika, UI, Ibadan",
-                  style: TextStyle(
-                    color: Theme.of(context).colorScheme.inversePrimary,
-                    fontWeight: FontWeight.bold,
+                Consumer<Restaurant>(
+                  builder: (context, restaurant, child) => Text(
+                    restaurant.deliveryAddress,
+                    style: TextStyle(
+                      color: Theme.of(context).colorScheme.inversePrimary,
+                    ),
                   ),
                 ),
                 Icon(
                   Icons.keyboard_arrow_down_rounded,
+                  color: Theme.of(context).colorScheme.inversePrimary,
                 ),
               ],
             ),
