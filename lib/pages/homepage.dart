@@ -25,10 +25,8 @@ class _HomepageState extends State<Homepage>
   @override
   void initState() {
     setState(
-      () {
-        _tabcontroller =
-            TabController(length: FoodCategory.values.length, vsync: this);
-      },
+      () => _tabcontroller =
+          TabController(length: FoodCategory.values.length, vsync: this),
     );
     super.initState();
   }
