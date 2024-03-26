@@ -4,8 +4,9 @@ import 'package:provider/provider.dart';
 
 class CurrentLocation extends StatelessWidget {
   CurrentLocation({super.key});
-  TextEditingController textController = TextEditingController();
+ 
   void openLocationSearchBox(BuildContext context) {
+     TextEditingController textController = TextEditingController();
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
