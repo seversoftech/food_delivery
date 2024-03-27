@@ -51,12 +51,15 @@ class _HomepageState extends State<Homepage>
         padding: EdgeInsets.zero,
         itemBuilder: (context, index) {
           final food = categoryMenu[index];
-          return FoodTile(
-            food: food,
-            onTap: () => Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => FoodPage(food: food),
+          return Container(
+            color: Theme.of(context).colorScheme.secondary,
+            child: FoodTile(
+              food: food,
+              onTap: () => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => FoodPage(food: food),
+                ),
               ),
             ),
           );
