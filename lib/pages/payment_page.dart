@@ -73,40 +73,38 @@ class _PaymentPageState extends State<PaymentPage> {
         foregroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text("Checkout"),
       ),
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            CreditCardWidget(
-              cardNumber: cardNumber,
-              expiryDate: expiryDate,
-              cardHolderName: cardHolderName,
-              cvvCode: cvvCode,
-              showBackView: isCvvFocused,
-              onCreditCardWidgetChange: (p0) {},
-            ),
-            CreditCardForm(
-              formKey: formKey,
-              cardNumber: cardNumber,
-              expiryDate: expiryDate,
-              cardHolderName: cardHolderName,
-              cvvCode: cvvCode,
-              onCreditCardModelChange: ((data) {
-                setState(() {
-                  cardNumber = data.cardNumber;
-                  expiryDate = data.expiryDate;
-                  cardHolderName = data.cardHolderName;
-                  cvvCode = data.cvvCode;
-                });
-              }),
-            ),
-            Spacer(),
-            ClickButton(
-              text: "Pay now",
-              onTap: userTappedPay,
-            ),
-            SizedBox(height: 25)
-          ],
-        ),
+      body: Column(
+        children: [
+          CreditCardWidget(
+            cardNumber: cardNumber,
+            expiryDate: expiryDate,
+            cardHolderName: cardHolderName,
+            cvvCode: cvvCode,
+            showBackView: isCvvFocused,
+            onCreditCardWidgetChange: (p0) {},
+          ),
+          CreditCardForm(
+            formKey: formKey,
+            cardNumber: cardNumber,
+            expiryDate: expiryDate,
+            cardHolderName: cardHolderName,
+            cvvCode: cvvCode,
+            onCreditCardModelChange: ((data) {
+              setState(() {
+                cardNumber = data.cardNumber;
+                expiryDate = data.expiryDate;
+                cardHolderName = data.cardHolderName;
+                cvvCode = data.cvvCode;
+              });
+            }),
+          ),
+          Spacer(),
+          ClickButton(
+            text: "Pay now",
+            onTap: userTappedPay,
+          ),
+          SizedBox(height: 25)
+        ],
       ),
     );
   }
