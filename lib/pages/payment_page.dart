@@ -82,13 +82,7 @@ class _PaymentPageState extends State<PaymentPage> {
             cvvCode: cvvCode,
             showBackView: isCvvFocused,
             onCreditCardWidgetChange: (p0) {},
-            // glassmorphismConfig: Glassmorphism.defaultConfig(),
-            // enableFloatingCard: true,
-            // floatingConfig: FloatingConfig(
-            //   isGlareEnabled: true,
-            //   isShadowEnabled: true,
-            //   shadowConfig: FloatingShadowConfig(),
-            // ),
+           
           ),
           CreditCardForm(
             formKey: formKey,
