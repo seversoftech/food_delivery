@@ -16,13 +16,7 @@ class Food {
       required this.availableAddons});
 }
 
-enum FoodCategory {
-  Burgers,
-  Salads,
-  Sides,
-  Desserts,
-  Drinks,
-}
+enum FoodCategory { Burgers, Salads, Sides, Desserts, Drinks }
 
 class Addon {
   String name;
