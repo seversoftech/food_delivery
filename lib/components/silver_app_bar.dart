@@ -36,7 +36,11 @@ class CustomAppBar extends StatelessWidget {
           icon: Icon(Icons.shopping_cart),
           onPressed: () {
             Navigator.push(
-                context, MaterialPageRoute(builder: (context) => CartPage()));
+              context,
+              MaterialPageRoute(
+                builder: (context) => CartPage(),
+              ),
+            );
           },
         ),
       ],
