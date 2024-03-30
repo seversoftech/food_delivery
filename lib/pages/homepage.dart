@@ -7,7 +7,6 @@ import 'package:food_delivery/models/food.dart';
 import 'package:food_delivery/models/restaurant.dart';
 import 'package:food_delivery/pages/food_page.dart';
 import 'package:provider/provider.dart';
-
 import '../components/silver_app_bar.dart';
 import '../components/tab_bar.dart';
 
