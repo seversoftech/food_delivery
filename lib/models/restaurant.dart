@@ -236,7 +236,7 @@ class Restaurant extends ChangeNotifier {
       ],
     ),
     Food(
-      name: "B dessert",
+      name: "B Dessert",
       description:
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
       imagePath: "lib/images/desserts/dessert3.jpeg",
@@ -249,7 +249,7 @@ class Restaurant extends ChangeNotifier {
       ],
     ),
     Food(
-      name: "CS dessert",
+      name: "CS Dessert",
       description:
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
       imagePath: "lib/images/desserts/dessert4.jpeg",
@@ -262,7 +262,7 @@ class Restaurant extends ChangeNotifier {
       ],
     ),
     Food(
-      name: "Main dessert",
+      name: "Maine Dessert",
       description:
           "A jucy beef patty with meted chedder, lettuse, tomato, and a hint of onion and pickle",
       imagePath: "lib/images/desserts/dessert5.jpeg",
