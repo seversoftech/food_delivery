@@ -135,8 +135,8 @@ class Restaurant extends ChangeNotifier {
       price: 340,
       category: FoodCategory.Salads,
       availableAddons: [
-        Addon(name: "Extra Cheese", price: 0.099),
-        Addon(name: "Bacon", price: 1.99),
+        Addon(name: "Extra Cheese", price: 1.099),
+        Addon(name: "Bacon", price: 2.99),
         Addon(name: "Avacado", price: 2.99),
       ],
     ),
@@ -151,8 +151,8 @@ class Restaurant extends ChangeNotifier {
       category: FoodCategory.Sides,
       availableAddons: [
         Addon(name: "Extra Cheese", price: 0.099),
-        Addon(name: "Bacon", price: 1.99),
-        Addon(name: "Avacado", price: 2.99),
+        Addon(name: "Bacon", price: 1.9),
+        Addon(name: "Avacado", price: 5.99),
       ],
     ),
     Food(
@@ -177,8 +177,8 @@ class Restaurant extends ChangeNotifier {
       category: FoodCategory.Sides,
       availableAddons: [
         Addon(name: "Extra Cheese", price: 0.099),
-        Addon(name: "Bacon", price: 1.99),
-        Addon(name: "Avacado", price: 2.99),
+        Addon(name: "Bacon", price: 2.99),
+        Addon(name: "Avacado", price: 3.99),
       ],
     ),
     Food(
