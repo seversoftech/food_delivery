@@ -60,7 +60,7 @@ class MyDrawer extends StatelessWidget {
               }),
           SizedBox(
             height: 25,
-          )
+          ),
         ],
       ),
     );
