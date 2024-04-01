@@ -49,7 +49,20 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static const FirebaseOptions android = FirebaseOptions();
+  static const FirebaseOptions android = FirebaseOptions(
+    apiKey: 'AIzaSyBgJGS6Tr8C-a5puHCFaIHK8e6RZ6k_upE',
+    appId: '1:302278613840:android:878a2f12a1653b7b5bea55',
+    messagingSenderId: '302278613840',
+    projectId: 'fooddelivery1759',
+    storageBucket: 'fooddelivery1759.appspot.com',
+  );
 
-  static const FirebaseOptions ios = FirebaseOptions();
+  static const FirebaseOptions ios = FirebaseOptions(
+    apiKey: 'AIzaSyAkoZhqOubSiKjHQTKHyyo1TEVgqj_jGHc',
+    appId: '1:302278613840:ios:5fce8e4e2f9bd46f5bea55',
+    messagingSenderId: '302278613840',
+    projectId: 'fooddelivery1759',
+    storageBucket: 'fooddelivery1759.appspot.com',
+    iosBundleId: 'com.example.foodDelivery',
+  );
 }
