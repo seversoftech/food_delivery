@@ -36,7 +36,7 @@ flutter:
 
   uses-material-design: true
 
-  # To add assets to your application, add an assets section, like this:
+
   assets:
     - lib/images/burgers/
     - lib/images/sides/
@@ -67,5 +67,3 @@ flutter:
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
   #
-  # For details regarding fonts from package dependencies,
-  # see https://flutter.dev/custom-fonts/#from-packages
